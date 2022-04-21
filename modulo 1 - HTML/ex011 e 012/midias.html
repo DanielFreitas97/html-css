@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispostivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="">
+    </picture>
+    <hr>
+    <h1>Minha tentativa</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-pequena.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-media.jpg" type="image/jpg">
+        <img src="imagens/paisagem-grande.jpg" alt="">
+    </picture>
+    <hr>
+    <h1>Reproduzindo áudio</h1>
+    <p>
+        Colocando arquivos de áudio em sua pagina HTML
+    </p>
+    <audio src="audio/Tropic Fuse - French Fuse.mp3" controls></audio>
+    <hr>
+    <h1>Colocando video na pagina localmente</h1>
+    <p>
+        Assista o video logo abaixo
+    </p>
+    <video controls width="560px">
+        <source src="video/meuvideo.mp4" type="video/mp4">
+        <source src="video/meuvideo2.ogv" type="video/ogv">
+    </video>
+    <hr>
+    <h1>Inserindo video do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5B2H9SCYh4w" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</body>
+
+</html>
